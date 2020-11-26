@@ -20,7 +20,7 @@ public class LevelClick implements View.OnClickListener {
     public void onClick(View view) {
         int[] location = new int[2];
         view.getLocationOnScreen(location);
-        //Toast.makeText(mainActivity, "X axis is "+location[0] +"and Y axis is "+location[1], Toast.LENGTH_SHORT).show();
+        //Toast.makeText(mainActivity, "Xs axis is "+location[0] +"and Y axis is "+location[1], Toast.LENGTH_SHORT).show();
         Toast.makeText(mainActivity, view.getResources().getResourceName(view.getId()), Toast.LENGTH_SHORT).show();
 
         FrameLayout levelLayout = mainActivity.findViewById(R.id.levelLayout);
